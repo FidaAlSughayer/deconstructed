@@ -15,13 +15,21 @@
     :-ms-input-placeholder {  
        color: #DCDCDC;  
     }
+    
+    textarea {
+     width: 100%;
+     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+     box-sizing: border-box;         /* Opera/IE 8+ */
+    }
+    
 </style>
 </head>
 
-<body OnLoad="document.myform.mytextfield.focus();">
+<body>
   
 <form name="mainForm">
-  <input type="text" style="font-size: 100px; color: grey; outline: none; border: none;" placeholder="What's on your mind?" name="mainInput">
+  <textarea autofocus type="text" style="font-size: 100px; color: grey; outline: none; border: none;" placeholder="What's on your mind?" name="mainInput">
 </form>
 
 </body>
