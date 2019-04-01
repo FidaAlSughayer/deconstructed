@@ -31,16 +31,20 @@
     }
     
     ::-webkit-input-placeholder {
-       color: #DCDCDC;
+        font-family: Arial;
+        color: #DCDCDC;
     }
     :-moz-placeholder { /* Upto Firefox 18, Deprecated in Firefox 19  */
-       color: #DCDCDC;  
+        font-family: Arial;
+        color: #DCDCDC;  
     }
     ::-moz-placeholder {  /* Firefox 19+ */
-       color: #DCDCDC;  
+        font-family: Arial;
+        color: #DCDCDC;  
     }
     :-ms-input-placeholder {  
-       color: #DCDCDC;  
+        font-family: Arial;
+        color: #DCDCDC;  
     }
     
 </style>
@@ -49,7 +53,11 @@
 <body>
   
 <form name="mainForm">
-  <textarea type="text" style="font-size: 100px; color: grey; font-family: 'Deconstructed', Arial, sans-serif; outline: none; border: none;" placeholder="What's on your mind?" name="mainInput"></textarea>
+  <textarea type="text" style="font-family: 'Deconstructed', Arial, sans-serif; 
+                               font-size: 100px; 
+                               color: #00FFFF; 
+                               outline: none; border: none;" 
+                                placeholder="What's on your mind?" name="mainInput"></textarea>
 </form>
 
 </body>
