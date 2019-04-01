@@ -46,9 +46,8 @@
     }
     
     .blurry-text {
-       color: transparent;
-       text-shadow: 0 0 5px rgba(0,0,0,0.5);
-        border: 1px red;
+       color: transparent !important;
+       text-shadow: 0 0 13px #00FFFF;
     }
     
     .main-button {
@@ -72,13 +71,10 @@
 <button class="main-button" onclick="myFunction()">Try it</button>
     
 <script type="text/javascript">
-    console.log("Button not working");
-    
-function myFunction() {
-   var element = document.getElementById("mainInput");
-   element.classList.add("blurry-text");
-   console.log("Button is working");
-}
+    function myFunction() {
+       var element = document.getElementById("mainInput");
+       element.classList.add("blurry-text");
+    }
 </script>
 
 </body>
