@@ -90,14 +90,14 @@
     function myFunction() {
        var element = document.getElementById("mainInput");
        element.classList.add("blurry-text");
-       element.disabled = "true";
+       element.disabled = true;
         
         setTimeout(function(){ 
             var element = document.getElementById("mainInput");
             element.value = "";
             element.classList.remove("blurry-text");
             element.classList.remove("disabled");
-            element.disabled = "false";
+            element.disabled = false;
         }, 10000);
     }
 </script>
