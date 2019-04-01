@@ -10,6 +10,13 @@
         margin: 0px;
     }
     
+    @font-face {
+        font-family: "Deconstructed";
+        src: url("./deconstructed.otf");
+        src: 
+        url("./deconstructed.otf") format("opentype");
+    }
+    
     form {
         height: 100%;
         width: 100%;
@@ -42,7 +49,7 @@
 <body>
   
 <form name="mainForm">
-  <textarea type="text" style="font-size: 100px; color: grey; outline: none; border: none;" placeholder="What's on your mind?" name="mainInput"></textarea>
+  <textarea type="text" style="font-size: 100px; color: grey; font-family: 'Deconstructed', Arial, sans-serif; outline: none; border: none;" placeholder="What's on your mind?" name="mainInput"></textarea>
 </form>
 
 </body>
