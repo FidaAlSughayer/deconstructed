@@ -52,6 +52,12 @@
        text-shadow: 0 0 5px rgba(0,0,0,0.5);
     }
     
+    .main-button {
+        position: fixed;
+        bottom: 0px;
+        z-index: 100;
+    }
+    
 </style>    
 </head>
 
@@ -65,7 +71,7 @@
                                 placeholder="What's on your mind?" id="mainInput" name="mainInput"></textarea>
 </form>
     
-<button onclick="blur()">Try it</button>
+<button class="main-button" onclick="blur()">Try it</button>
     
 <script>
 function blur() {
