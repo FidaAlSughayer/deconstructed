@@ -94,9 +94,10 @@
         
         setTimeout(function(){ 
             var element = document.getElementById("mainInput");
-       element.classList.remove("blurry-text");
-       element.disabled = "false";
-        }, 1000);
+            element.value = "";
+            element.classList.remove("blurry-text");
+            element.disabled = "false";
+        }, 10000);
     }
 </script>
 
