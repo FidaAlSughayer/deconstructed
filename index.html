@@ -47,7 +47,12 @@
         color: #DCDCDC;  
     }
     
-</style>
+    .textshadow .blurry-text {
+       color: transparent;
+       text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    
+</style>    
 </head>
 
 <body>
@@ -57,8 +62,17 @@
                                font-size: 100px; 
                                color: #00FFFF; 
                                outline: none; border: none;" 
-                                placeholder="What's on your mind?" name="mainInput"></textarea>
+                                placeholder="What's on your mind?" id="mainInput" name="mainInput"></textarea>
 </form>
+    
+<button onclick="blur()">Try it</button>
+    
+<script>
+function blur() {
+   var element = document.getElementById("mainInput");
+   element.classList.add("blurry-text");
+}
+</script>
 
 </body>
 </html>
