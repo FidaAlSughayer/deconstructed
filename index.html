@@ -100,20 +100,18 @@
             element.value = element.value.toUpperCase();
         }, 2000);
         
+       var length = element.value.length;
+            
+       for (i=0; i<(length-5); i++){                
+          setTimeout(function(){ 
+              var e = document.getElementById("mainInput");
+              var l = element.value.length;
+              e.value = e.value.slice(0,(l-5));
+          }, 5000);                
+        }
+        
         setTimeout(function(){ 
-            var element = document.getElementById("mainInput");
-            
-            var length = element.value.length;
-            
-            for (i=0; i<(length-5); i++){
-                
-                setTimeout(function(){ 
-                    var e = document.getElementById("mainInput");
-                    e.value = e.value.slice(0,5);
-                }, 5000);
-                
-            }
-            
+            var element = document.getElementById("mainInput");                      
             element.value = "";
             element.classList.remove("blurry-text");
             element.classList.remove("disabled");
