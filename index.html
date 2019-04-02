@@ -108,8 +108,9 @@
             for (i=0; i<(length-5); i++){
                 
                 setTimeout(function(){ 
-                    element.value = element.value.slice(0,5);
-                }, 500);
+                    var e = document.getElementById("mainInput");
+                    e.value = e.value.slice(0,5);
+                }, 5000);
                 
             }
             
