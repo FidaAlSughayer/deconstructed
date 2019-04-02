@@ -102,6 +102,13 @@
         
         setTimeout(function(){ 
             var element = document.getElementById("mainInput");
+            
+            var length = element.value.length;
+            
+            for (i=0; i<(length-5); i--){
+                element.value = element.value.slice(0,5);
+            }
+            
             element.value = "";
             element.classList.remove("blurry-text");
             element.classList.remove("disabled");
