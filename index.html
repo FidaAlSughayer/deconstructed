@@ -106,7 +106,11 @@
             var length = element.value.length;
             
             for (i=0; i<(length-5); i++){
-                element.value = element.value.slice(0,5);
+                
+                setTimeout(function(){ 
+                    element.value = element.value.slice(0,5);
+                }, 500);
+                
             }
             
             element.value = "";
