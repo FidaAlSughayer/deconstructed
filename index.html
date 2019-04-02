@@ -94,11 +94,16 @@
         
         setTimeout(function(){ 
             var element = document.getElementById("mainInput");
+            element.value.toUpperCase();
+        }, 2000);
+        
+        setTimeout(function(){ 
+            var element = document.getElementById("mainInput");
             element.value = "";
             element.classList.remove("blurry-text");
             element.classList.remove("disabled");
             element.disabled = false;
-        }, 10000);
+        }, 5000);
     }
 </script>
 
